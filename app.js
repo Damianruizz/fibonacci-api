@@ -15,6 +15,6 @@ app.use((req, res, next) => {
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-app.use('/api', fibonacciRoutes);
+app.use(fibonacciRoutes);
 
 module.exports = app;
